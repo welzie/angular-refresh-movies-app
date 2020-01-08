@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let movie of movies">
+        <div class="clickable" (click)="details(movie)">{{movie.title}},</div> 
+        {{movie.year}}, 
+        <span [class.drama]="movie.category === 'drama'">{{movie.category}}</span></li>
+</ul>
